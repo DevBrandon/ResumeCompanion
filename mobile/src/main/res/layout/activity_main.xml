@@ -12,16 +12,71 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Log In"
+        android:id="@+id/logInTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
+        android:id="@+id/passwordField"
+        android:layout_marginTop="122dp"
+        android:layout_below="@+id/logInTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usernameField"
+        android:layout_below="@+id/logInTextView"
+        android:layout_marginTop="51dp"
+        android:autoText="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Username" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/logInButton"
+        android:layout_below="@+id/passwordField"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="85dp" />
+        android:layout_marginTop="51dp"
+        android:backgroundTint="#8ca7d4"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/registerButton"
+        android:textColor="#ffffff"
+        android:backgroundTint="#8ca7d4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/logInButton"
+        android:layout_alignEnd="@+id/logInButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Not yet signed up?"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp" />
 </RelativeLayout>
